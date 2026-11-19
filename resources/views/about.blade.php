@@ -27,6 +27,7 @@
         src="https://images.unsplash.com/photo-1764584503115-3fca2f40700a?auto=format&fit=crop&w=1200&q=80"
         alt="Barista preparing coffee behind a cafe counter"
         loading="lazy"
+        decoding="async"
     >
 
     <div class="story-copy">
@@ -105,6 +106,7 @@
                 src="https://images.unsplash.com/photo-1753351052277-a7ff634f0bd5?auto=format&fit=crop&w=900&q=80"
                 alt="Cafe team members standing behind their coffee shop counter"
                 loading="lazy"
+                decoding="async"
             >
             <h3>CJ Capilitan</h3>
             <p>Cafe Manager</p>
@@ -115,6 +117,7 @@
                 src="https://images.unsplash.com/photo-1764584503115-3fca2f40700a?auto=format&fit=crop&w=900&q=80"
                 alt="Barista preparing coffee at the cafe"
                 loading="lazy"
+                decoding="async"
             >
             <h3>Niño Calubag</h3>
             <p>Head Barista</p>
@@ -125,6 +128,7 @@
                 src="https://images.unsplash.com/photo-1763272594094-946e5be3ccbe?auto=format&fit=crop&w=900&q=80"
                 alt="Baristas smiling behind a coffee shop counter"
                 loading="lazy"
+                decoding="async"
             >
             <h3>Nicholas Daniel Briones</h3>
             <p>Cafe Operations</p>
