@@ -66,3 +66,19 @@
 .team-card:hover img {
     filter: saturate(1);
 }
+
+/* Keyboard accessibility */
+.read-toggle:focus-visible {
+    outline: 2px solid var(--brown);
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .team-card,
+    .team-card img,
+    .extra-story {
+        transition: none;
+    }
+}
