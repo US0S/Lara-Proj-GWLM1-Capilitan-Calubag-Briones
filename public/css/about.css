@@ -35,6 +35,19 @@
     .team-heading { display: block; }
     .team-grid { grid-template-columns: 1fr; gap: 35px; }
     .team-card img { height: 420px; }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .team-card img {
+        width: 100%;
+        display: block;
+    }
+
+    .about-hero > p {
+        max-width: 100%;
+    }
 }
 
 /* Team card hover effects */
