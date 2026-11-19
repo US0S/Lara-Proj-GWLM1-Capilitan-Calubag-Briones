@@ -36,3 +36,20 @@
     .team-grid { grid-template-columns: 1fr; gap: 35px; }
     .team-card img { height: 420px; }
 }
+
+/* Team card hover effects */
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+}
+
+.team-card:hover img {
+    filter: saturate(1);
+}
