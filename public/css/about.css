@@ -35,4 +35,50 @@
     .team-heading { display: block; }
     .team-grid { grid-template-columns: 1fr; gap: 35px; }
     .team-card img { height: 420px; }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .team-card img {
+        width: 100%;
+        display: block;
+    }
+
+    .about-hero > p {
+        max-width: 100%;
+    }
+}
+
+/* Team card hover effects */
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+}
+
+.team-card:hover img {
+    filter: saturate(1);
+}
+
+/* Keyboard accessibility */
+.read-toggle:focus-visible {
+    outline: 2px solid var(--brown);
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .team-card,
+    .team-card img,
+    .extra-story {
+        transition: none;
+    }
 }
