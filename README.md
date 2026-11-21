@@ -22,7 +22,7 @@ The app contains three pages:
 ## Member Assignments
 
 | Member | Assigned Module | Branch Name |
-|---|---|---|
+|--------|-----------------|-------------|
 | CJ Capilitan | Home page, navigation, and shared layout | `dev-Member1-Capilitan` |
 | Niño Calubag | About page | `dev-Member2-Calubag` |
 | Nicholas Daniel Briones | Contact page and form validation | `dev-Member3-Briones` |
