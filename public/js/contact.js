@@ -3,10 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMessage = document.getElementById('successMessage');
 
     const fields = {
-        name:    { input: document.getElementById('name'),    error: document.getElementById('nameError') },
-        email:   { input: document.getElementById('email'),   error: document.getElementById('emailError') },
-        subject: { input: document.getElementById('subject'), error: document.getElementById('subjectError') },
-        message: { input: document.getElementById('message'), error: document.getElementById('messageError') },
+        name: {
+            input: document.getElementById('name'),
+            error: document.getElementById('nameError'),
+        },
+        email: {
+            input: document.getElementById('email'),
+            error: document.getElementById('emailError'),
+        },
+        subject: {
+            input: document.getElementById('subject'),
+            error: document.getElementById('subjectError'),
+        },
+        message: {
+            input: document.getElementById('message'),
+            error: document.getElementById('messageError'),
+        },
     };
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -35,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-    Object.keys(fields).forEach(key => {
+    Object.keys(fields).forEach((key) => {
         fields[key].input.addEventListener('input', () => {
             if (fields[key].error.textContent !== '') validateField(key);
         });
@@ -45,11 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         successMessage.textContent = '';
         let valid = true;
-        Object.keys(fields).forEach(key => {
+        Object.keys(fields).forEach((key) => {
             if (!validateField(key)) valid = false;
         });
         if (valid) {
-            successMessage.textContent = 'Thank you! Your message has been sent.';
+            successMessage.textContent =
+                'Thank you! Your message has been sent.';
             form.reset();
         }
     });

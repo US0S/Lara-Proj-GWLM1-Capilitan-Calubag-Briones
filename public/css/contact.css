@@ -1,24 +1,26 @@
 /* --- NAVIGATION BAR (Deep Creamy Coffee) --- */
 .site-header {
-    background-color: #eaddcd !important; 
-    border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+    background-color: #eaddcd !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     position: relative !important;
 }
-.site-header .brand, .site-header .nav-links a, .site-header .nav-toggle { 
-    color: #3e2723 !important; 
+.site-header .brand,
+.site-header .nav-links a,
+.site-header .nav-toggle {
+    color: #3e2723 !important;
 }
-.site-header .brand-mark { 
-    border-color: #3e2723 !important; 
-    color: #3e2723 !important; 
+.site-header .brand-mark {
+    border-color: #3e2723 !important;
+    color: #3e2723 !important;
 }
-.site-header .nav-links a.active { 
-    color: #8b5a2b !important; 
+.site-header .nav-links a.active {
+    color: #8b5a2b !important;
 }
 
 /* --- FULL SCREEN BACKGROUND --- */
-body { 
-    margin: 0; 
-    padding: 0; 
+body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -30,9 +32,9 @@ body {
     margin-left: -50vw;
     margin-right: -50vw;
 
-    min-height: calc(100vh - 80px); 
-    background-image: 
-        linear-gradient(rgba(20, 13, 8, 0.3), rgba(20, 13, 8, 0.5)), 
+    min-height: calc(100vh - 80px);
+    background-image:
+        linear-gradient(rgba(20, 13, 8, 0.3), rgba(20, 13, 8, 0.5)),
         url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
@@ -52,14 +54,14 @@ body {
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
     display: grid;
     grid-template-columns: 1fr 1.1fr; /* Balanced split */
-    overflow: hidden; 
+    overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* --- LEFT SIDE (GLASSMORPHISM) --- */
 .contact-info-side {
-    background-color: rgba(26, 17, 10, 0.4); 
-    backdrop-filter: blur(5px); 
+    background-color: rgba(26, 17, 10, 0.4);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     color: #fdfbf7;
     padding: 35px 30px; /* Tightened padding */
@@ -76,44 +78,53 @@ body {
     line-height: 1.2;
     margin-bottom: 12px;
     color: #fdfbf7;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .contact-info-side .subtitle {
     font-family: sans-serif;
     font-size: 0.85rem; /* Smaller text */
     line-height: 1.5;
-    color: #f0e6df; 
+    color: #f0e6df;
     margin-bottom: 25px;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.details { display: flex; flex-direction: column; gap: 12px; }
-.detail-item { display: flex; flex-direction: column; }
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
 .detail-item .label {
     font-family: sans-serif;
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #d4a373; 
+    color: #d4a373;
     margin-bottom: 2px;
 }
 .detail-item .value {
     font-family: sans-serif;
     font-size: 0.85rem;
     color: #ffffff;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* --- RIGHT SIDE (CREAMY LATTE FORM) --- */
 .contact-form-side {
-    background-color: #eaddcd; 
+    background-color: #eaddcd;
     padding: 35px 30px; /* Tightened padding */
     display: flex;
     align-items: center;
 }
 
-.contact-form { width: 100%; }
+.contact-form {
+    width: 100%;
+}
 
 .contact-form .form-group {
     margin-bottom: 15px; /* Drastically reduced spacing */
@@ -129,34 +140,38 @@ body {
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #5d4037; 
+    color: #5d4037;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     padding: 6px 0; /* Shorter inputs */
     border: none;
-    border-bottom: 2px solid #cdb9a8; 
+    border-bottom: 2px solid #cdb9a8;
     border-radius: 0;
     font-size: 0.9rem;
     font-family: sans-serif;
     background-color: transparent;
     transition: all 0.3s ease;
-    color: #3e2723; 
+    color: #3e2723;
     resize: none;
 }
 
 .contact-form input::placeholder,
-.contact-form textarea::placeholder { color: #a69386; }
+.contact-form textarea::placeholder {
+    color: #a69386;
+}
 
-.contact-form input:focus, 
+.contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
     border-bottom: 2px solid #3e2723;
 }
 
 /* Error states */
-.contact-form .invalid { border-bottom: 2px solid #e11d48; }
+.contact-form .invalid {
+    border-bottom: 2px solid #e11d48;
+}
 .contact-form .error {
     color: #e11d48;
     font-family: sans-serif;
@@ -168,8 +183,8 @@ body {
 
 /* Button */
 .contact-form button {
-    background: #2c1e16; 
-    color: #eaddcd; 
+    background: #2c1e16;
+    color: #eaddcd;
     border: none;
     padding: 12px 24px;
     border-radius: 4px;
@@ -185,7 +200,7 @@ body {
 }
 
 .contact-form button:hover {
-    background: #4a3327; 
+    background: #4a3327;
 }
 
 .success {
@@ -201,11 +216,11 @@ body {
 @media (max-width: 800px) {
     .contact-hero {
         padding: 20px 15px;
-        background-attachment: scroll; 
+        background-attachment: scroll;
     }
 
-    .contact-card { 
-        grid-template-columns: 1fr; 
+    .contact-card {
+        grid-template-columns: 1fr;
         border-radius: 10px;
     }
 
@@ -223,7 +238,7 @@ body {
         padding: 30px 20px;
     }
 
-    .contact-form input, 
+    .contact-form input,
     .contact-form textarea {
         font-size: 16px; /* Prevents iOS auto-zoom */
     }

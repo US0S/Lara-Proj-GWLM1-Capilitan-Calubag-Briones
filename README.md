@@ -5,9 +5,9 @@
 - **Group Name:** GWLM1
 - **Section:** IT-110
 - **Members:**
-  - CJ Capilitan
-  - Niño Calubag
-  - Nicholas Daniel Briones
+    - CJ Capilitan
+    - Niño Calubag
+    - Nicholas Daniel Briones
 
 ## App Theme
 
@@ -21,11 +21,11 @@ The app contains three pages:
 
 ## Member Assignments
 
-| Member | Assigned Module | Branch Name |
-|--------|-----------------|-------------|
-| CJ Capilitan | Home page, navigation, and shared layout | `dev-Member1-Capilitan` |
-| Niño Calubag | About page | `dev-Member2-Calubag` |
-| Nicholas Daniel Briones | Contact page and form validation | `dev-Member3-Briones` |
+| Member                  | Assigned Module                          | Branch Name             |
+| ----------------------- | ---------------------------------------- | ----------------------- |
+| CJ Capilitan            | Home page, navigation, and shared layout | `dev-Member1-Capilitan` |
+| Niño Calubag            | About page                               | `dev-Member2-Calubag`   |
+| Nicholas Daniel Briones | Contact page and form validation         | `dev-Member3-Briones`   |
 
 ## Page Screenshots
 
@@ -52,57 +52,57 @@ The app contains three pages:
 
 1. Clone the repository:
 
-   ```bash
-   git clone <repository-url>
-   cd Lara-Proj-GWLM1-Capilitan-Calubag-Briones
-   ```
+    ```bash
+    git clone <repository-url>
+    cd Lara-Proj-GWLM1-Capilitan-Calubag-Briones
+    ```
 
 2. Install PHP dependencies:
 
-   ```bash
-   composer install
-   ```
+    ```bash
+    composer install
+    ```
 
 3. Install frontend dependencies:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 4. Create the environment file:
 
-   ```bash
-   cp .env.example .env
-   ```
+    ```bash
+    cp .env.example .env
+    ```
 
-   On Windows Command Prompt, use:
+    On Windows Command Prompt, use:
 
-   ```cmd
-   copy .env.example .env
-   ```
+    ```cmd
+    copy .env.example .env
+    ```
 
 5. Generate the Laravel application key:
 
-   ```bash
-   php artisan key:generate
-   ```
+    ```bash
+    php artisan key:generate
+    ```
 
 6. Configure the database in `.env`, then run migrations:
 
-   ```bash
-   php artisan migrate
-   ```
+    ```bash
+    php artisan migrate
+    ```
 
 7. Build the frontend assets:
 
-   ```bash
-   npm run build
-   ```
+    ```bash
+    npm run build
+    ```
 
 8. Start the Laravel development server:
 
-   ```bash
-   php artisan serve
-   ```
+    ```bash
+    php artisan serve
+    ```
 
 9. Open `http://127.0.0.1:8000` in a browser.
